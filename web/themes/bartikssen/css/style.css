@@ -23,6 +23,7 @@ h2:not(.node__title) {
   background: url("/sites/default/files/theme/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .content .menu-item a {
@@ -31,13 +32,13 @@ h2:not(.node__title) {
   font-size: 20px;
 }
 
-.node--promoted.node {
+.view-neue-kuenstler .node--promoted.node, .view-naechste-events-teaser .node--promoted.node {
   border: 1px solid #cecece;
   padding: 1em;
   min-height: 12.5em;
 }
 
-.node--promoted.node img {
+.node--type-kuenstler img {
   height: 8em;
   width: auto;
 }
@@ -46,6 +47,12 @@ h2:not(.node__title) {
   position: absolute;
   bottom: 1em;
   right: 1em;
+}
+
+.node--type-veranstaltungsort .node__content.clearfix {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
