@@ -803,7 +803,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'hsfl_cms_ha',
+  'database' => 'hsfl_cms_ha2',
   'username' => 'root',
   'password' => 'root',
   'prefix' => '',
