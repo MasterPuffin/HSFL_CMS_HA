@@ -1,0 +1,114 @@
+<h2>Pr&auml;misse</h2>
+<p>Die in der HA entwickelte Seite soll eine &Uuml;bersicht &uuml;ber aktuell in der Region stattfindende Events bieten.
+  Dem Benutzer soll es m&ouml;glich sein, aktuelle Events anhand bestimmter Kriterien wie etwa dem Ort zu suchen.</p>
+<h2>Inhtaltstypen</h2>
+<h3>Event</h3>
+<p>Der IT Event stellt eine einzelne Veranstaltung dar.</p>
+<h3>K&uuml;nstler</h3>
+<p>Der IT K&uuml;nstler stellt einen einzelnen K&uuml;nstler dar. So ist es m&ouml;glich, nach Events von bestimmen K&uuml;nstlern
+  zu suchen.</p>
+<h3>Veranstaltungsort</h3>
+<p>Der IT Veranstaltungsort stellt einen Veranstaltungsort dar. Des Weiteren enth&auml;lt er weiterf&uuml;hrende
+  Informationen wie einen Saalplan und Informationen zum gastronomischem Angebot und parken.</p>
+<h2>Taxonomien</h2>
+<h3>Event-Typ</h3>
+<p>Diese TX listet die Art des Events auf. So kann ein Event bspw. ein Konzert oder aber eine Lesung sein.</p>
+<h3>K&uuml;nstler-Tags</h3>
+<p>Diese TX listet besondere Eigenschaften eines K&uuml;nstlers auf. Etwa ob es sich um einen besonders prominenten K&uuml;nstler
+  handelt.</p>
+<h3>K&uuml;nstler-Typ</h3>
+<p>Diese TX listet den Typ eines K&uuml;nstlers auf, wie etwa ob es sich um einen S&auml;nger handelt.</p>
+<h3>Ort-Tags</h3>
+<p>Diese TX listet besondere Eigenschaften eines Veranstaltungsortes auf, etwa ob er sich drau&szlig;en oder drinnen
+  befindet.</p>
+<h2>Men&uuml;s</h2>
+<p>Es gibt drei Men&uuml;s:</p>
+<h3>Hauptnavigation</h3>
+<p>Dieses Men&uuml; listet alle f&uuml;r den Benutzer wichtigen Punkte auf.</p>
+<h3>Fu&szlig;zeile</h3>
+<p>Dieses Men&uuml; listet alle Punkte auf, welche auf einer Webseite vorhanden sein m&uuml;ssen auf, welche aber nicht
+  unbedingt f&uuml;r jeden Benutzer relevant sind auf. Da die Seiten Impressum, Datenschutz &amp; Kontakt lediglich
+  einfache Textseiten mit Standardtexten darstellen w&uuml;rden, habe ich mich entschieden, diese nicht umzusetzen.</p>
+<h3>Benutzer</h3>
+<p>Dieses Men&uuml; befindet sich oben rechts auf der Seite und bietet die M&ouml;glichkeit des Logouts / Logins in
+  Drupal.</p>
+<h2>Theme</h2>
+<p>Es wurde ein eigenes Theme erstellt, welches auf Bartik basiert. Dieses hei&szlig;t Bartikssen. Dadurch kann die
+  Grundstruktur von Bartik &uuml;bernommen und angepasst werden.</p>
+<p>Zum Erstellen des Child-Themes, bin ich im groben folgender Anleitung gefolgt: <a
+  href="https://www.ostraining.com/blog/drupal/how-to-create-a-bartik-subtheme-in-drupal-8/">https://www.ostraining.com/blog/drupal/how-to-create-a-bartik-subtheme-in-drupal-8/</a>
+</p>
+<h2>Seiten</h2>
+<h3>Startseite</h3>
+<p>Die Startseite bietet einen Einleitungstext sowie eine &Uuml;bersicht &uuml;ber die n&auml;chsten Events und neue K&uuml;nstler.</p>
+<p>Die Startseite ist eine einfache Textseite, der Einleitungstext ist der Content dieses CTs. Mittels Blocklayout
+  wurden die Bl&ouml;cke &bdquo;N&auml;chste Events Teaser&ldquo; und &bdquo;Neue K&uuml;nstler&ldquo; eingebunden,
+  welche nur auf der Startseite angezeigt werden.</p>
+<h3>N&auml;chste Events</h3>
+<p>Diese Seite ist direkt aus der gleichnamigen View entstanden und zeigt die n&auml;chsten Events. Mittels diverser
+  Filter ist es dem Benutzer m&ouml;glich, nach gew&uuml;nschten Event-Eigenschaften zu suchen.</p>
+<h3>Alle K&uuml;nstler</h3>
+<p>Diese Seite ist direkt aus der gleichnamigen View entstanden und zeigt alle K&uuml;nstler. Mittels diverser Filter
+  ist es dem Benutzer m&ouml;glich, nach gew&uuml;nschten K&uuml;nstlern zu suchen.</p>
+<h3>Alle Veranstaltungsorte</h3>
+<p>Diese Seite ist direkt aus der gleichnamigen View entstanden und zeigt alle Veranstaltungsorte. Mittels diverser
+  Filter ist es dem Benutzer m&ouml;glich, nach gew&uuml;nschtem Ort zu suchen.</p>
+<h3>Dokumentation</h3>
+<p>Diese Seite zeigt die Dokumentation dieser HA.</p>
+<h2>Views</h2>
+<h3>Alle K&uuml;nstler</h3>
+<p>Diese Ansicht zeigt alle K&uuml;nstler, sortiert nach ihrem Namen. Der Benutzer kann nach ihrem Titel suchen, sowie
+  die Eigenschaften und ihren Typ aus einer Dropdown-Liste ausw&auml;hlen.</p>
+<h3>Alle Veranstaltungsorte</h3>
+<p>Diese Ansicht zeigt alle Veranstaltungsorte, sortiert nach ihrem Namen. Der Benutzer kann nach ihrem Titel suchen,
+  sowie die Eigenschaften aus einer Dropdown-Liste ausw&auml;hlen.</p>
+<h3>Neue K&uuml;nstler</h3>
+<p>Diese Ansicht zeigt die letzten drei erstellen CTs K&uuml;nstler f&uuml;r den Block &bdquo;Neue K&uuml;nstler&ldquo;
+  auf der Startseite.</p>
+<h3>N&auml;chste Events</h3>
+<p>Diese Ansicht zeigt alle Events, sortiert nach ihrem Namen, wobei das Event in der Zukunft liegen muss. Der Benutzer
+  kann nach ihrem Titel suchen, sowie die Eigenschaften aus einer Dropdown-Liste ausw&auml;hlen, das Datum bestimmen und
+  die Sortierreihenfolge &auml;ndern.</p>
+<p>Des Weiteren war angedacht, dass der Nutzer in dieser Ansicht auch nach dem Namen eines K&uuml;nstlers oder Ortes
+  suchen kann, dies ist aber nicht m&ouml;glich, siehe Probleme.</p>
+<h3>N&auml;chste Events Teaser</h3>
+<p>Diese Ansicht zeigt die n&auml;chsten drei Events f&uuml;r den Block &bdquo;N&auml;chste Events&ldquo; auf der
+  Startseite.</p>
+<h3>N&auml;chste Events an diesem Ort</h3>
+<p>Diese Ansicht zeigt die n&auml;chsten Events an einem Ort auf der entsprechenden Detailseite eines Ortes. Dazu ist
+  diese mittels Contextual Filters und Relationships an den entsprechenden Ort gebunden.</p>
+<h3>N&auml;chste Events dieses K&uuml;nstlers</h3>
+<p>Diese Ansicht zeigt die n&auml;chsten Events eines K&uuml;nstlers auf der entsprechenden Detailseite eines K&uuml;nstlers.
+  Dazu ist diese mittels Contextual Filters und Relationships an den entsprechenden K&uuml;nstler gebunden.</p>
+<h2>URLs</h2>
+<p>Jede Seite sowie jeder Content Type hat eigene URLs, welche mit Pathauto realisiert wurden. Die Benennung folgt dem
+  Schema &lt;URL&gt;/&lt;Content-Type&gt;/&lt;Titel&gt;.</p>
+<h2>Module</h2>
+<p>Folgende Module wurden installiert</p>
+<h3>Devel</h3>
+<p>Zur schnelleren Entwicklung und zum Debugging</p>
+<h3>Pathauto</h3>
+<p>F&uuml;r bessere Seiten-URLs</p>
+<p>Die Installation der Module erfolgte mittels Composer, sodass Aktualisierungen einfach per composer update Befehl
+  durchgef&uuml;hrt werden k&ouml;nnen.</p>
+<p>Des Weiteren wurden alle Module, die Drupal standardm&auml;&szlig;ig installiert und die nicht f&uuml;r den
+  Seitenbetrieb notwendig waren deinstalliert.</p>
+<h2>Schwierigkeiten</h2>
+<h3>Datenbankkorruption nach Drush Cache Rebuild</h3>
+<p>Jedes Mal, nachdem mit Drush mittels `drush cr` der Cache neu gebaut wurde, wurde die Datenbank korrumpiert. Danach
+  trat der Fehler auf, dass die unserialiserung von Objekten bzw. Array in der Klasse &bdquo;web/core/lib/Drupal/Component/DependencyInjection/Container.php&ldquo;
+  nicht mehr m&ouml;glich war, was zu einem Totalausfall der Seite gef&uuml;hrt hat.</p>
+<p>Ich habe probiert, s&auml;mtliche Komponenten zu reinstallieren bzw. zu updaten, jedoch ohne Erfolg. Auch habe ich
+  probiert, die og. Klasse so abzu&auml;ndern, dass die serialisierten Objekte vor dem unserialisieren neu berechnet und
+  etwaige Fehler korrigiert werden, doch auch dies hat nicht funktioniert.</p>
+<p>Auch eine umfassende Fehlersuche im Internet kam zu keinen Ergebnissen, daher musste ich jegliche weitere Entwicklung
+  ohne Cache Rebuildung via Drush vornehmen.</p>
+<h3>Filtern nach dem Titel einer referenzierten Entity</h3>
+<p>Urspr&uuml;nglich geplant war, dass in der View &bdquo;N&auml;chste Events&ldquo; auch nach dem Namen des K&uuml;nstlers
+  dieses Events gesucht werden kann. Der K&uuml;nstler ist in dem Content Type als Entity Reference hinterlegt. Mittels
+  Relationships habe ich die View auch mit der Entsprechenden K&uuml;nstler-Enitity verkn&uuml;pfen k&ouml;nnen und
+  konnte auch auf alle Felder der Entity zugreifen, mit Ausnahme des Titelfeldes. Ich habe online keine M&ouml;glichkeit
+  gefunden, wie dies doch m&ouml;glich w&auml;re.</p>
+<p>Eine L&ouml;sung f&uuml;r das Problem w&auml;re gewesen, den Titel als zus&auml;tzliches Feld anzulegen, welches dann
+  h&auml;tte referenziert werden k&ouml;nnen. Ich habe mich aber gegen diese L&ouml;sung entschieden, da dies die
+  Formularanzeige un&uuml;bersichtlich macht.</p>
